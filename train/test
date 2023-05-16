@@ -1,0 +1,11 @@
+!git clone https://github.com/hustvl/YOLOP.git
+
+%cd YOLOP
+
+!pip install -r requirements.txt
+
+!python tools/train.py
+
+!python tools/test.py --weights /content/YOLOP/weights/End-to-end.pth
+
+!python tools/test.py --weights /content/YOLOP/runs/BddDataset/checkpoint.pth
